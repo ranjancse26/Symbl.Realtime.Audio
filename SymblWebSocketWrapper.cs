@@ -30,7 +30,7 @@ namespace Symbl.Realtime.Audio
         protected SymblWebSocketWrapper(string uri)
         {
             _webSocketClient = new ClientWebSocket();
-            _webSocketClient.Options.KeepAliveInterval = TimeSpan.FromSeconds(20);
+            _webSocketClient.Options.KeepAliveInterval = TimeSpan.FromSeconds(30);
             _uri = new Uri(uri);
             _cancellationToken = _cancellationTokenSource.Token;
         }
